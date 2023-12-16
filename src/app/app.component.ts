@@ -7,6 +7,7 @@ import { PostComponent } from './post/post.component';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
+
   
   postArray: Array<string> = ['post 1', 'post 2', 'post 3', 'post 4', 'post 5'];
 
@@ -18,9 +19,17 @@ export class AppComponent {
   ]; 
 
   constructor(){
-    // for(let i = 0; i < this.postArray.length; i++){
-    //   // console.log(this.postArray[i]);
-    // }
+
+  }
+
+  addNew() {
+    this.objArray.push({id: 6,postTitle: 'Post 6' })
+  }
+
+  onDelete(post: any) {
+    let index = this.objArray.indexOf(post);
+    console.log(index);
+    this.objArray.splice(index, 1);
   }
   
 }

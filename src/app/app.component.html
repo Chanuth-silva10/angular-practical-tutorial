@@ -1,29 +1,13 @@
-<p>{{ postArray }}</p>
-
 <!-- ul>li*5 -->
-
-<ul>
-  <li>{{postArray[0]}}</li>
-  <li>{{postArray[1]}}</li>
-  <li>{{postArray[2]}}</li>
-  <li>{{postArray[3]}}</li>
-  <li>{{postArray[4]}}</li>
-</ul>
-
-<p>Fetched Using ngFor Directive</p>
-
-<ul>
-  <li *ngFor="let post of postArray">{{post}}</li>
-</ul>
 
 <p>Fetched Object Array</p>
 
-<!-- <ul>
-  <li *ngFor="let post of objArray">{{post | json}}</li>
-</ul> -->
+<button (click)="addNew()">Add New Data</button>
 
 <ul>
-  <li *ngFor="let post of objArray">{{post.postTitle}}</li>
+  <li *ngFor="let post of objArray">{{post.postTitle}}
+  <button (click)="onDelete(post)">Delete</button>
+  </li>
 </ul>
 
 <!-- table>tr*3>td*3 -->
