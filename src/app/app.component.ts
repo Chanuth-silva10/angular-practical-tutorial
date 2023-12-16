@@ -7,5 +7,18 @@ import { PostComponent } from './post/post.component';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  price:number = 99.00
+  today: Date = new Date();
+
+  postObj : object = {
+    id: 1,
+    postTitle: "Post 1"
+  }
+
+  postArray: Array<string> = [
+    "post 1",
+    "post 2",
+    "post 3",
+    "post 4",
+  ]
+
 }

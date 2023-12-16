@@ -1,5 +1,15 @@
-<h1>{{price | currency}}</h1>
+<!-- Data pipe -->
+<h1>{{today | date: 'shortDate'}}</h1>
 
-<h1>{{price | currency : 'RS'}}</h1>
 
-<h1>{{price | currency : 'USD' : false : '2.2'}}</h1>
+<!-- json pipe -->
+<p>{{postObj | json}}</p>
+
+
+<!-- presentage pipe -->
+<h3>{{ 0.567 | percent}}</h3>
+
+
+<!-- slice pipe -->
+<h3>{{postArray | slice : 0:3}}</h3>
+
