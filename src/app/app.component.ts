@@ -7,9 +7,5 @@ import { PostComponent } from './post/post.component';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title: string = 'Usage of Uppercase pipe';
-  count: number = 28464; // more readable
-  dcValue: number = 3.85674; // count value
-
   price:number = 99.00
 }
