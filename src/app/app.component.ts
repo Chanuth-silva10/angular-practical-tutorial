@@ -11,16 +11,9 @@ export class AppComponent {
   
   postArray: Array<string> = ['post 1', 'post 2', 'post 3', 'post 4', 'post 5'];
 
-  objArray: Array<any> = [
-    {id: 1, postTitle: 'Post 1'},
-    {id: 2, postTitle: 'Post 2'},
-    {id: 3, postTitle: 'Post 3'},
-    {id: 4, postTitle: 'Post 4'},
-  ]; 
+  objArray: Array<any> = []; 
 
-  constructor(){
-
-  }
+  constructor(){}
 
   addNew() {
     this.objArray.push({id: 6,postTitle: 'Post 6' })
