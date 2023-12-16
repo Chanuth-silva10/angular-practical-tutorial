@@ -21,7 +21,7 @@
   <p>There is no data to fetch ...</p>
 </ng-template> -->
 
-<p>ngSwitch Cases</p>
+<!-- <p>ngSwitch Cases</p>
 
 <div>
   <button (click)="onClick('step 1')">Step 1</button>
@@ -35,6 +35,25 @@
   <div *ngSwitchCase="'step 2'">Step 2 Form</div>
   <div *ngSwitchCase="'step 3'">Step 3 Form</div>
   <div *ngSwitchDefault> Something Else</div>
-</div>
+</div> -->
 
 <!-- table>tr*3>td*3 -->
+
+<p>NgStyle Directive</p>
+<!-- single line approach -->
+<h1
+  [style.color]="isActive ? 'red' : 'blue'"
+  [style.textTransform]="isActive ? 'uppercase' : 'lowercase'"
+>
+  Angular Udemy Course
+</h1>
+
+<!-- multi line approach -->
+
+<h1
+[ngStyle]="{
+  color : isActive ? 'red': 'blue',
+  textTransform : isActive ? 'uppercase' : 'lowercase'
+}"
+>NgStyle Directive</h1>
+

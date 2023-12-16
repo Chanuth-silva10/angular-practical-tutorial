@@ -11,7 +11,9 @@ export class AppComponent {
 
   // objArray: Array<any> = [];
 
-  stepForm: string = "default"
+  // stepForm: string = "default"
+
+  isActive: boolean = true;
 
   constructor() {}
 
@@ -23,7 +25,7 @@ export class AppComponent {
   //   this.objArray.splice(index, 1);
   // }
 
-  onClick(status: any) {
-    this.stepForm = status;
-  }
+  // onClick(status: any) {
+  //   this.stepForm = status;
+  // }
 }
