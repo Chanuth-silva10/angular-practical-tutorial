@@ -6,20 +6,14 @@ import { AppModule } from './app/app.module';
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
 
-// what is Angular Directive and How to use 
+// what is angular - pipe
+// Pipes are used to transforming data into a particular format when we only need that data transformed 'in' a template. or the HTML View.
 
-// Types of Angular Directives(Components)
-//         Component Directive
-//         Structural Directive
-//         Attribute Directive
-//         Custom Directive
-
-// About 
-//         ngIf Directive, 
-//         ngTemplate Directive, 
-//         ngSwitchCase Directive,
-//         ngFor Directive
-
-// Learn About ngClass & ngStyle Directive
-
-// Learn Difference of strctural and Attribute Directive
+// 1. Uppercase pipe
+// 2. Lowercase pipe
+// 3. Decimal / Number pipe
+// 4. Currency pipe
+// 5. Data pipe
+// 6. JSON pipe
+// 7. Precent pipe
+// 8. Slice pipe

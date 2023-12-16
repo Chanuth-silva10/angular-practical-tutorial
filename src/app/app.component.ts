@@ -7,25 +7,9 @@ import { PostComponent } from './post/post.component';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  name!: string;
-  email!: string;
-  address!: string;
+  title: string = 'Usage of Uppercase pipe';
+  count: number = 28464; // more readable
+  dcValue: number = 3.85674; // count value
 
-  userArray: Array<any> = [];
-
-  constructor() {}
-
-  onClick() {
-    this.userArray.push({
-      name: this.name,
-      email: this.email,
-      address: this.address,
-    });
-
-    console.log(this.userArray);
-  }
-
-  onDelete(index:any) {
-    this.userArray.splice(index, 1);
-  }
+  price:number = 99.00
 }
