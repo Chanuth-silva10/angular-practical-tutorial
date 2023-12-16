@@ -7,20 +7,23 @@ import { PostComponent } from './post/post.component';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
+  // postArray: Array<string> = ['post 1', 'post 2', 'post 3', 'post 4', 'post 5'];
 
-  
-  postArray: Array<string> = ['post 1', 'post 2', 'post 3', 'post 4', 'post 5'];
+  // objArray: Array<any> = [];
 
-  objArray: Array<any> = []; 
+  stepForm: string = "default"
 
-  constructor(){}
+  constructor() {}
 
-  addNew() {
-    this.objArray.push({id: 6,postTitle: 'Post 6' })
+  // addNew() {
+  //   this.objArray.push({ id: 6, postTitle: 'Post 6' });
+  // }
+
+  // onDelete(index: any) {
+  //   this.objArray.splice(index, 1);
+  // }
+
+  onClick(status: any) {
+    this.stepForm = status;
   }
-
-  onDelete(index: any) {
-    this.objArray.splice(index, 1);
-  }
-  
 }
