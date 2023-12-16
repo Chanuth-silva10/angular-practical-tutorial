@@ -7,9 +7,22 @@ import { PostComponent } from './post/post.component';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
+
   bool: boolean = false;
 
-  buttonClick() {
-    console.log('Button Click Event Worked')
+  // Template Variable
+
+  onKeyup(username:any) {
+    // console.log($event.key);
+    console.log(username);
+
   }
+
+  // event filtering
+
+  // onKeyup($event: any) {
+  //   console.log($event.key);
+  //   console.log('kkkkkkkkkkkk')
+
+  // }
 }

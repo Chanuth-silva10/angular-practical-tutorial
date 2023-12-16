@@ -1,5 +1,5 @@
-<!-- event binding -->
+<!-- event filtering -->
+<!-- <input type="text" (keyup)="onKeyup($event)"> -->
 
-<!-- <button onclick='function()'>Click Me</button> -->
-
-<button (click)='buttonClick()'>Click Me</button>
+<!-- Template Variable -->
+<input type="text" (keyup.enter) = "onKeyup(username.value)" #username>
