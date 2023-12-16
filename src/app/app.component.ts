@@ -10,11 +10,12 @@ export class AppComponent {
 
   bool: boolean = false;
   userName!: string;
-
+  textValue: string = "Value is coming from component";
+  
   // Two way data binding 
 
   onKeyup() {
-    console.log(this.userName);
+    console.log(this.textValue);
   }
 
 }
