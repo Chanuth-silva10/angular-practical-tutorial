@@ -8,8 +8,7 @@ import { PostComponent } from './post/post.component';
 })
 
 export class AppComponent{
-
-  message:string = 'Message From Typescript Component File';
-  imgUrl: string = 'https://smaller-pictures.appspot.com/images/dreamstime_xxl_65780868_small.jpg';
+  
+  bool:boolean = false;
 
 }
