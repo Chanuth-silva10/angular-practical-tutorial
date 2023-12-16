@@ -7,25 +7,25 @@ import { PostComponent } from './post/post.component';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  // postArray: Array<string> = ['post 1', 'post 2', 'post 3', 'post 4', 'post 5'];
+  name!: string;
+  email!: string;
+  address!: string;
 
-  // objArray: Array<any> = [];
-
-  // stepForm: string = "default"
-
-  isActive: boolean = false;
+  userArray: Array<any> = [];
 
   constructor() {}
 
-  // addNew() {
-  //   this.objArray.push({ id: 6, postTitle: 'Post 6' });
-  // }
+  onClick() {
+    this.userArray.push({
+      name: this.name,
+      email: this.email,
+      address: this.address,
+    });
 
-  // onDelete(index: any) {
-  //   this.objArray.splice(index, 1);
-  // }
+    console.log(this.userArray);
+  }
 
-  // onClick(status: any) {
-  //   this.stepForm = status;
-  // }
+  onDelete(index:any) {
+    this.userArray.splice(index, 1);
+  }
 }
