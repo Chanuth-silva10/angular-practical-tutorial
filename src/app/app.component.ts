@@ -13,7 +13,7 @@ export class AppComponent {
 
   // stepForm: string = "default"
 
-  isActive: boolean = true;
+  isActive: boolean = false;
 
   constructor() {}
 

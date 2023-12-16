@@ -39,21 +39,37 @@
 
 <!-- table>tr*3>td*3 -->
 
-<p>NgStyle Directive</p>
+<!-- <p>NgStyle Directive</p> -->
 <!-- single line approach -->
-<h1
+<!-- <h1
   [style.color]="isActive ? 'red' : 'blue'"
   [style.textTransform]="isActive ? 'uppercase' : 'lowercase'"
 >
   Angular Udemy Course
-</h1>
+</h1> -->
 
 <!-- multi line approach -->
 
-<h1
+<!-- <h1
 [ngStyle]="{
   color : isActive ? 'red': 'blue',
   textTransform : isActive ? 'uppercase' : 'lowercase'
 }"
+>NgStyle Directive</h1> -->
+
+<p>NgClass Directrive</p>
+
+<h1
+[class.main]="isActive"
+[class.text-weight]="isActive"
 >NgStyle Directive</h1>
 
+
+<p>NgClass Directrive Another</p>
+
+<h1
+[ngClass]="{
+  'main': isActive,
+  'text-weight': isActive
+}"
+>NgStyle Directive</h1>
