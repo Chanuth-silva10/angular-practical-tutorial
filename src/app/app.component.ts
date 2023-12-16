@@ -1,4 +1,4 @@
-import { Component, ViewChild , AfterViewInit} from '@angular/core';
+import { Component} from '@angular/core';
 import { PostComponent } from './post/post.component';
 
 @Component({
@@ -7,24 +7,9 @@ import { PostComponent } from './post/post.component';
   styleUrls: ['./app.component.css']
 })
 
-export class AppComponent implements AfterViewInit{
-  title = 'angular-practice';
-  parentMessage: string = 'Message coming from parent component';
-  message!:string;
-  fromChildOutput!:string;
-  
-  @ViewChild(PostComponent) childComp : any;
-  
-  constructor(){
-    console.log(this.childComp)// Undefined
-  }
+export class AppComponent{
 
-  ngAfterViewInit(): void {
-    console.log(this.childComp);
-    this.message = this.childComp.childMessage;
-  }
+  message:string = 'Message From Typescript Component File';
+  imgUrl: string = 'https://smaller-pictures.appspot.com/images/dreamstime_xxl_65780868_small.jpg';
 
-  reciveMessage($event: any){
-    this.fromChildOutput = $event
-  }
 }
