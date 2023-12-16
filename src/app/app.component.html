@@ -4,16 +4,17 @@
 
 <button (click)="addNew()">Add New Data</button>
 
-<!-- <ul>
-  <li *ngFor="let post of objArray">{{post.postTitle}}
-  <button (click)="onDelete(post)">Delete</button>
-  </li>
-</ul> -->
 
-<ul>
-  <li *ngFor="let post of objArray ; let i = index"> {{post.postTitle}}
-  <button (click)="onDelete(i)">Delete</button>
-  </li>
-</ul>
+<div *ngIf='objArray.length > 0'>
+  <ul>
+    <li *ngFor="let post of objArray ; let i = index"> {{post.postTitle}}
+    <button (click)="onDelete(i)">Delete</button>
+    </li>
+  </ul>
+</div>
+
+<div *ngIf='objArray.length == 0'>
+  <p>There is no data to fetch ...</p>
+</div>
 
 <!-- table>tr*3>td*3 -->
