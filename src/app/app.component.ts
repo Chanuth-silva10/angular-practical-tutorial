@@ -11,6 +11,7 @@ export class AppComponent implements AfterViewInit{
   title = 'angular-practice';
   parentMessage: string = 'Message coming from parent component';
   message!:string;
+  fromChildOutput!:string;
   
   @ViewChild(PostComponent) childComp : any;
   
@@ -21,5 +22,9 @@ export class AppComponent implements AfterViewInit{
   ngAfterViewInit(): void {
     console.log(this.childComp);
     this.message = this.childComp.childMessage;
+  }
+
+  reciveMessage($event: any){
+    this.fromChildOutput = $event
   }
 }
