@@ -6,12 +6,20 @@ import { AppModule } from './app/app.module';
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
 
-// Display Data and event handling
+// what is Angular Directive and How to use 
 
-// 1. Angular Data Binding Methods
-// 2. Angular Two-way Data Binding 
-// 3. How to Handle Events in Angular 
-       
-//        Click 
-//        Keyup 
-//        filtering
+// Types of Angular Directives(Components)
+//         Component Directive
+//         Structural Directive
+//         Attribute Directive
+//         Custom Directive
+
+// About 
+//         ngIf Directive, 
+//         ngTemplate Directive, 
+//         ngSwitchCase Directive,
+//         ngFor Directive
+
+// Learn About ngClass & ngStyle Directive
+
+// Learn Difference of strctural and Attribute Directive

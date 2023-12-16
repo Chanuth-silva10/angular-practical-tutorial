@@ -8,12 +8,12 @@ import { PostComponent } from './post/post.component';
 })
 export class AppComponent {
   
-  postTitle!: string;
-  postDetails!: string;
-  imageURL!:string;
-  postURL!:string;
-  addBackground!: boolean;
+  postArray: Array<string> = ['post 1', 'post 2', 'post 3', 'post 4', 'post 5'];
 
-  
+  constructor(){
+    // for(let i = 0; i < this.postArray.length; i++){
+    //   // console.log(this.postArray[i]);
+    // }
+  }
   
 }
