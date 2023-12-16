@@ -1,5 +1,3 @@
-<!-- event filtering -->
-<!-- <input type="text" (keyup)="onKeyup($event)"> -->
 
-<!-- Template Variable -->
-<input type="text" (keyup.enter) = "onKeyup(username.value)" #username>
+<!-- import { FormsModule } from '@angular/forms';     for fixed the value -->
+<input type="text" [(ngModel)] = 'userName' (keyup.enter) = "onKeyup()">

@@ -9,20 +9,12 @@ import { PostComponent } from './post/post.component';
 export class AppComponent {
 
   bool: boolean = false;
+  userName!: string;
 
-  // Template Variable
+  // Two way data binding 
 
-  onKeyup(username:any) {
-    // console.log($event.key);
-    console.log(username);
-
+  onKeyup() {
+    console.log(this.userName);
   }
 
-  // event filtering
-
-  // onKeyup($event: any) {
-  //   console.log($event.key);
-  //   console.log('kkkkkkkkkkkk')
-
-  // }
 }
