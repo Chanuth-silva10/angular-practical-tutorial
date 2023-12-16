@@ -7,11 +7,6 @@ import { PostComponent } from './post/post.component';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  
-  userdetails = {
-     name: "User 1",
-     city: "Sri Lanka",
-     countryCode: "SRL"
-  }
-
+  dummyText: string =
+    'Most paragraphs in an essay have a three-part structure—introduction, body, and conclusion. You can see this structure in paragraphs whether they are narrating, describing, comparing, contrasting, or analyzing information. Each part of the paragraph plays an important role in communicating your meaning to your reader.';
 }
