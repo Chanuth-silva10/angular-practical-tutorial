@@ -26,9 +26,13 @@ export class AppComponent {
     this.objArray.push({id: 6,postTitle: 'Post 6' })
   }
 
-  onDelete(post: any) {
-    let index = this.objArray.indexOf(post);
-    console.log(index);
+  // onDelete(post: any) {
+  //   let index = this.objArray.indexOf(post);
+  //   console.log(index)
+  //   this.objArray.splice(index, 1);
+  // }
+
+  onDelete(index: any) {
     this.objArray.splice(index, 1);
   }
   
